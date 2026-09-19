@@ -34,6 +34,7 @@ app.get("/", (req, res) => {
 // Connect to MongoDB and start server
 const PORT = process.env.PORT || 5000;
 
+
 mongoose
   .connect(process.env.MONGO_URI, { dbName: "safespace-gh" })
   .then(() => {
